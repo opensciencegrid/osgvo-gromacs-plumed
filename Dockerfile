@@ -32,3 +32,6 @@ RUN /bin/bash -c "source /opt/plumed/sourceme.sh";\
     cmake .. -DGMX_MPI=on && make -j4 install && make clean;\
     ln -s /usr/local/gromacs/bin/gmx_mpi /usr/bin/gmx_mpi;
 
+COPY .singularity.d /.singularity.d
+
+
